@@ -1,4 +1,4 @@
-var score = 'Global Vriable';
+var scope = 'Global Vriable';
 
 function getValue(){
   console.log(scope);
