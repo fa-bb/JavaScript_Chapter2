@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript本格入門</title>
+</head>
+<body>
+  <p id = "myid"></p>
+
+  <script>
+    t = 0;
+var elem = document.getElementById("myid");
+
+function myfunc(){
+  var date = new Date();
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var seconds = date.getSeconds();
+  elem.innerHTML = hours+"時"+minutes+"分"+seconds+"秒";
+}
+
+t = setInterval("myfunc()",500);
+  </script>
+ 
+</body>
+  <noscript>
+    JavaScriptが利用できません
+  </noscript>
+</html>

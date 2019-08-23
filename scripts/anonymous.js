@@ -5,6 +5,7 @@ function arrayWalk(data,f){
 }
 
 var ary = [1,2,4,8,16];
+
 arrayWalk(
   ary,
   function(value,key){
