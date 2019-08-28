@@ -12,6 +12,6 @@ function namespase(ns){
 var my = namespase('Wings.Gihyo.Js.MyApp');
 my.Person = function(){};
 var p = new my.Person();
-console.log(p instanceof Wings.Gihyo.Js.MyApp,Person);
+console.log(p instanceof Wings.Gihyo.Js.MyApp.Person);
 
 
