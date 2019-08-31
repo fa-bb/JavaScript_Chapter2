@@ -23,3 +23,8 @@ class Member{
     return this.lastName + this.firstName;
   }
 }
+
+let m = new Member('浩全','橋本');
+console.log(m.getName());
+
+
