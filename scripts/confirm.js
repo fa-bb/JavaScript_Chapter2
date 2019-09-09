@@ -1,0 +1,9 @@
+document.addEventListener('DOMContentLoaded',function(){
+  console.log('hello');
+  document.getElementById('fm').addEventListener('submit',function(e){
+    console.log('hello2');
+    if(!window.confirm('ページを送信しても良いですか？')){
+      e.preventDefault();
+    }
+  },false);
+},false);
