@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript本格入門</title>
+</head>
+<body>
+ 
+  <form >
+    <input id="target" type="" value="1000000"/> 以下：
+    <input id="x" type="number" value="7"/>の倍数＝
+    <span id="result">-</span>
+    <input id="btn" type="button" value="計算"/>
+  </form>
+
+<script>
+var newWorker = function(relativePath) {
+  try {
+    return newWorkerViaBlob(relativePath);
+  } catch (e) {
+    return new Worker(relativePath);
+  }
+};
+
+// var worker = new newWorker('worker_sample_main.js');
+var worker = new newWorker();
+
+worker.addEventListener('message', function(e) {
+  console.log('Worker said: ', e.data);
+}, false);
+
+worker.postMessage('Hello World'); // Send data to our worker.
+
+</script>
+
+
+
+  <!-- <script type="text/javascript" src="scripts/worker_client.js"></script> -->
+
+</body>
+  <noscript>
+    JavaScriptが利用できません
+  </noscript>
+</html>

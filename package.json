@@ -1,0 +1,26 @@
+{
+  "name": "javascript_chapter2",
+  "version": "1.0.0",
+  "main": "check_set.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-hashimoto0108/JavaScript_Chapter2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h-hashimoto0108/JavaScript_Chapter2/issues"
+  },
+  "homepage": "https://github.com/h-hashimoto0108/JavaScript_Chapter2#readme",
+  "description": "",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "grunt": "^1.0.4",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^5.1.0"
+  }
+}

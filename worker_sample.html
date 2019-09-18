@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript本格入門</title>
+</head>
+<body>
+
+<script>
+var newWorker = function(relativePath) {
+  try {
+    return newWorkerViaBlob(relativePath);
+  } catch (e) {
+    return new Worker(relativePath);
+  }
+};
+
+var worker = new newWorker('worker_sample_main.js');
+
+worker.addEventListener('message', function(e) {
+  console.log('Worker said: ', e.data);
+}, false);
+
+worker.postMessage('Hello World'); // Send data to our worker.
+
+</script>
+  
+  <!-- <script type="text/javascript" src="scripts/this_arrow.js"></script> -->
+
+</body>
+  <noscript>
+    JavaScriptが利用できません
+  </noscript>
+</html>
