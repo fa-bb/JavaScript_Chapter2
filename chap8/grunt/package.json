@@ -11,5 +11,8 @@
   "devDependencies": {
     "grunt": "^1.0.4",
     "grunt-contrib-uglify": "^4.0.1"
+  },
+  "dependencies": {
+    "minimist": "^1.2.3"
   }
 }
