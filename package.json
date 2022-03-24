@@ -24,6 +24,6 @@
     "load-grunt-tasks": "^5.1.0"
   },
   "dependencies": {
-    "minimist": "^1.2.3"
+    "minimist": "^1.2.6"
   }
 }
