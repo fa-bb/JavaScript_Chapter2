@@ -9,7 +9,7 @@
   "author": "Yoshihiro Yamada",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.3.0",
+    "grunt": "^1.5.2",
     "grunt-contrib-uglify": "^4.0.1"
   },
   "dependencies": {
